@@ -6,10 +6,9 @@ const UsersList = (props) => {
     <Card className={classes.users}>
       <ul>
         {props.users.map((user) => {
-            // console.log('user ',user.name , user.age)
           return (
             <li key={user.id}>
-            {user.name} {user.age} (year old)
+              {user.name} {user.age} (year old) {user.college}
             </li>
           );
         })}
